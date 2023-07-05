@@ -1,4 +1,4 @@
-export default  class Productos {
+export default  class Producto {
 
 
     constructor(productoId, productoNombre, categoriaId, precioUnitario, unidadesStock, discontinuado) {
