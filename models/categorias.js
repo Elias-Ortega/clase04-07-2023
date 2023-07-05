@@ -1,4 +1,4 @@
-export class Categorias{ // ES6 - ES5 = "modules.exports" (sesión 6)
+export  default class Categoria{ //  export con  ES6 (sesión 6)
 
     constructor(categoriaId, categoriaNombre, descripcion){
 
