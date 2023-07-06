@@ -1,4 +1,5 @@
 import express from 'express';
+import { router } from '../routes/categorias.js';
 
 export default class Server {
 
@@ -18,9 +19,7 @@ export default class Server {
 
 //Rutas de mi webservice
     routes() {
-        this.app.get('/', (req, res) => {
-            res.render('index');
-        });
+       this.app.use('/categorias',router);
     }
 
     listen() {
