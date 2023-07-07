@@ -15,6 +15,8 @@ export default class Server {
     //Middlewares son metodos para dar configuraciones extras al servidor
     middlewares(){
         this.app.set('view engine', 'hbs');
+        this.app.use(express.urlencoded({extended: true}));
+        this.app.use(express.json());
     }
 
 //Rutas de mi webservice

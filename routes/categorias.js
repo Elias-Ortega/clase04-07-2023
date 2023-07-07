@@ -1,15 +1,15 @@
 import { Router} from "express";
-import { actualizar, eliminar, insertar, leerTodo} from "../controllers/categorias.js";
+import {  actualizarController,  eliminarController,  insertarController,  leerTodoController } from "../controllers/categorias.js";
 
 const router =  Router();
 
-router.get('/', leerTodo );
+router.post('/', leerTodoController );
 
-router.get('/insertar', insertar );
+router.post('/insertar', insertarController );
 
-router.get('/actualizar', actualizar);
+router.post('/actualizar', actualizarController);
 
-router.get('/eliminar', eliminar);
+router.post('/eliminar', eliminarController);
 
 export {
     router

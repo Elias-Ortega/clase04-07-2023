@@ -91,7 +91,7 @@ const eliminar = (id) => {
     
 } 
 
-exports = {
+export {
     crear,
     leerTodo,
     actualizar,
